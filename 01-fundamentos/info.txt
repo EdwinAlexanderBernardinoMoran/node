@@ -1,0 +1,8 @@
+- Metodo split() = Es un método de los objetos tipo String que se utiliza para dividir una cadena en un array de subcadenas, basándose en un delimitador especificado.
+
+let fecha = "2025-01-18";
+let partes = fecha.split("-");
+console.log(partes);
+// Resultado: ["2025", "01", "18"]
+
+
