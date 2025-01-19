@@ -1,0 +1,13 @@
+- Metodo split() = Es un método de los objetos tipo String que se utiliza para dividir una cadena en un array de subcadenas, basándose en un delimitador especificado.
+
+let fecha = "2025-01-18";
+let partes = fecha.split("-");
+console.log(partes);
+// Resultado: ["2025", "01", "18"]
+
+EVENT LOOP
+
+El event loop (bucle de eventos) en Node.js es un mecanismo central que permite a Node.js manejar operaciones asincrónicas sin bloquear el hilo principal. Es el encargado de gestionar las tareas, operaciones de entrada/salida (I/O), y callbacks de manera eficiente, manteniendo el rendimiento de la aplicación.
+
+
+- El comando start en el package.json es especial en Node
