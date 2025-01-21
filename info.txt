@@ -11,3 +11,4 @@ El event loop (bucle de eventos) en Node.js es un mecanismo central que permite 
 
 
 - El comando start en el package.json es especial en Node
+- Cada archivo en Node termina haciendo un modulo, entiendase como un objeto encapzulado, no puedo llamar una variable solo con require, tengo que exportarlo para poder hacer uso de las variables de ese archivo .
