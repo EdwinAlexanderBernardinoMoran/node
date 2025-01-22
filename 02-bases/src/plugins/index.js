@@ -1,7 +1,9 @@
-const { getUuid } = require('./get-uuid.plugin');
-const { getAge } = require('./get-age.plugin');
+const { getUuid } = require('../plugins/get-uuid.plugin');
+const { getAge } = require('../plugins/get-age.plugin');
+const { http } = require('../plugins/http-client.plugin');
 
 module.exports = {
     getUuid,
-    getAge
+    getAge,
+    http
 };

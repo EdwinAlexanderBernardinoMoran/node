@@ -1,3 +1,5 @@
+const { http } = require('../plugins')
+
 const getPokemonByIdOne = (id) => {
 
     const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
@@ -14,8 +16,8 @@ const getPokemonByIdOne = (id) => {
 const getPokemonById = async (id) => {
 
     const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
-    const response = await fetch(url);
-    const pokemon = await response.json();
+    const pokemon = await http.get(url);
+
 
     // throw new Error("Error Pokemonv no existe");
 
