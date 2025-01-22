@@ -1,8 +1,9 @@
 // const { emailTemplate} = require('./js-foundation/01-template')
 // require('./js-foundation/02-destructuring')
 // const {getUserById} = require('./js-foundation/04-arrow-function');
-const { getAge, getUuid } = require('./plugins');
-const { buildMakePerson } = require('./js-foundation/05-factory');
+// const { getAge, getUuid } = require('./plugins');
+// const { buildMakePerson } = require('./js-foundation/05-factory');
+const getPokemonById = require('./js-foundation/06-promise');
 
 // console.log(emailTemplate);
 
@@ -13,12 +14,20 @@ const { buildMakePerson } = require('./js-foundation/05-factory');
 //     console.log('User found:', user);
 // });
 
-const makePerson = buildMakePerson({getUuid, getAge});
 
-const obj = {
-    name: "Alexander",
-    birthdate: "1994-09-02",
-}
+// Clase 5 - Factory Function
+// const makePerson = buildMakePerson({getUuid, getAge});
 
-const john = makePerson(obj);
-console.log(john);
+// const obj = {
+//     name: "Alexander",
+//     birthdate: "1994-09-02",
+// }
+
+// const john = makePerson(obj);
+// console.log(john);
+
+getPokemonById(1)
+    .then(pokemon => console.log(pokemon))
+    .catch(error => console.error('Porfavor intente de nuevo', error))
+    .finally(() => console.log('Finalizado'));
+
