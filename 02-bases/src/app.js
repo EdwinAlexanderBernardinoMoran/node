@@ -3,7 +3,8 @@
 // const {getUserById} = require('./js-foundation/04-arrow-function');
 // const { getAge, getUuid } = require('./plugins');
 // const { buildMakePerson } = require('./js-foundation/05-factory');
-const getPokemonById = require('./js-foundation/06-promise');
+// const getPokemonById = require('./js-foundation/06-promise');
+const { buildLogger } = require('./plugins');
 
 // console.log(emailTemplate);
 
@@ -26,8 +27,17 @@ const getPokemonById = require('./js-foundation/06-promise');
 // const john = makePerson(obj);
 // console.log(john);
 
-getPokemonById(1)
-    .then(pokemon => console.log(pokemon))
-    .catch(error => console.error('Porfavor intente de nuevo', error))
-    .finally(() => console.log('Finalizado'));
+// Clase 6 - Promises
+
+// getPokemonById(1)
+//     .then(pokemon => console.log(pokemon))
+//     .catch(error => console.error('Porfavor intente de nuevo', error))
+//     .finally(() => console.log('Finalizado'));
+
+
+// Clase 7 - Logger Plugin
+
+const logger = buildLogger('app.js');
+logger.log('Hola mundo');
+ 
 
