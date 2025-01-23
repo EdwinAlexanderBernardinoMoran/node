@@ -45,6 +45,7 @@ build/Release
 # Dependency directories
 02-bases/node_modules/
 02-bases/jspm_packages/
+02-bases/*.log
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
