@@ -47,6 +47,9 @@ build/Release
 02-bases/jspm_packages/
 02-bases/*.log
 
+03-tyscript/node_modules/
+03-tyscript/jspm_packages/
+
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 
