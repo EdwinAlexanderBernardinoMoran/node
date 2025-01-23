@@ -18,5 +18,5 @@ const heroes = [
 
 const findHeroById = (id: number) => heroes.find(hero => hero.id === id);
 
-const hero = findHeroById(4);
-console.log(hero?.name ?? 'Hero not found !!'); // { id: 2, name: 'Spiderman', owner: 'Marvel' }
+const hero = findHeroById(2);
+console.log(hero?.name ?? 'Hero not found!'); // { id: 2, name: 'Spiderman', owner: 'Marvel' }

@@ -4,6 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js",
     "dev": "node --watch dist/app.js"
   },
   "keywords": [],
@@ -13,6 +15,7 @@
   "description": "",
   "devDependencies": {
     "@types/node": "^22.10.9",
+    "rimraf": "^6.0.1",
     "typescript": "^5.7.3"
   }
 }
