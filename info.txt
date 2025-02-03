@@ -9,6 +9,8 @@ EVENT LOOP
 
 El event loop (bucle de eventos) en Node.js es un mecanismo central que permite a Node.js manejar operaciones asincrónicas sin bloquear el hilo principal. Es el encargado de gestionar las tareas, operaciones de entrada/salida (I/O), y callbacks de manera eficiente, manteniendo el rendimiento de la aplicación.
 
-
 - El comando start en el package.json es especial en Node
 - Cada archivo en Node termina haciendo un modulo, entiendase como un objeto encapzulado, no puedo llamar una variable solo con require, tengo que exportarlo para poder hacer uso de las variables de ese archivo .
+
+Para integrar tyscript en node JS se hace de la siguiente manera = npm i -D typescript @types/node
+Inicializar el archivo de configuración de TypeScript ( Se puede configurar al gusto) = npx tsc --init --outDir dist/ --rootDir src
